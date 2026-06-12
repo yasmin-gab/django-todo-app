@@ -26,5 +26,6 @@ A lightweight, robust Task Management web application built with **Python** and 
 ### 1. Dynamic Routing & Context Control
 The application uses pattern matching (`<int:task_id>/`) to capture primary keys directly from the HTTP request path, mapping them onto specific view functions:
 
+```python
 path('toggle/<int:task_id>/', views.toggle_task, name='toggle_task')
 path('delete/<int:task_id>/', views.delete_task, name='delete_task')
